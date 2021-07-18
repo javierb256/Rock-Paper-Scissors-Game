@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- entire container for the game -->
+    <div class="container">
+        <h1>Welcome to Rock, Paper, Scissors!</h1>
+        <h3>Please select what move you will make</h3>
+
+        <div class="choices">
+            <button onclick="rockFunction()">Rock</button>
+            <button onclick="paperFunction()">Paper</button>
+            <button onclick="scissorsFunction()">Scissors</button>
+        </div>
+
+        <!-- section for player vs computer choices -->
+        <section>
+        <!-- Battle choices -->
+        <div class="flex-container">
+            <!-- left box -->
+            <div>
+                <img id="rockPicture" class="hidden pic" src="https://thingadayforever.files.wordpress.com/2013/02/thing-a-day-2013-16-googly-eyed-rock.jpg?w=640">
+                <img id="paperPicture" class="hidden pic" src="https://neal.fun/paper/minified/paper.jpg">
+                <img id="scissorsPicture" class="hidden pic" src="https://thumbs.dreamstime.com/b/scissors-clip-art-cartoon-illustration-funny-32879166.jpg">
+            </div>
+            <!-- middle box -->
+            <div><img id="vsPicture" class="pic" src="https://translated24.com/wp-content/uploads/2020/08/vs-versus-text-poster-battle-fight-game-flat-cartoon-with-red-dark-blue-halftone-background_101884-735.jpg" alt=""></div>
+           <!-- right box -->
+            <div>
+                <img id="rockPicture2" class="hidden pic" src="https://thingadayforever.files.wordpress.com/2013/02/thing-a-day-2013-16-googly-eyed-rock.jpg?w=640">
+                <img id="paperPicture2" class="hidden pic" src="https://neal.fun/paper/minified/paper.jpg">
+                <img id="scissorsPicture2" class="hidden pic" src="https://thumbs.dreamstime.com/b/scissors-clip-art-cartoon-illustration-funny-32879166.jpg">
+            </div>
+        </div>
+        </section>
+
+        <!-- results Section-->
+        <section>
+            <div>
+                <img id="winPicture" class="result" src="https://media.istockphoto.com/vectors/winner-message-word-bubble-in-retro-pop-art-style-on-blue-background-vector-id1135369578?k=6&m=1135369578&s=612x612&w=0&h=_iXU0vdaXH8st70hYdcgZUyLE8SksXVtjygeGTrm2Rg=">
+            </div>
+    
+            <div>
+                <img id="lostPicture" class="result" src="https://image.shutterstock.com/image-vector/you-lose-red-stamp-text-260nw-303609539.jpg">
+            </div>
+    
+            <div>
+                <img id="drawPicture" class="result" src="https://www.nicepng.com/png/detail/45-454035_cartoon-equals-sign-clip-art-image-math-equal.png">
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
